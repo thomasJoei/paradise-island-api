@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.upgrade.paradise.island</groupId>
+    <artifactId>paradise-island-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <springfox-version>2.8.0</springfox-version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    </properties>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.8.RELEASE</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jersey</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.5.13</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.4</version>
+        </dependency>
+
+<!--        Persistence-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.h2database</groupId>-->
+<!--            <artifactId>h2</artifactId>-->
+<!--            <scope>runtime</scope>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-java8</artifactId>
+            <version>5.1.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-codegen-maven-plugin</artifactId>
+                <version>2.2.3</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+
+                            <output>${project.build.directory}/generated-sources/swagger</output>
+                            <inputSpec>${project.basedir}/src/main/resources/swagger/api.yml</inputSpec>
+                            <language>spring</language>
+                            <apiPackage>com.upgrade.paradise.island.api</apiPackage>
+                            <modelPackage>com.upgrade.paradise.island.api.dto</modelPackage>
+                            <configOptions>
+
+                                <apiPackage>com.upgrade.paradise.island.api</apiPackage>
+                                <modelPackage>com.upgrade.paradise.island.api.dto</modelPackage>
+                                <sourceFolder>swagger</sourceFolder>
+                                <java8>true</java8>
+                                <interfaceOnly>true</interfaceOnly>
+                            </configOptions>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+<!--            <plugin>-->
+<!--            <groupId>io.swagger</groupId>-->
+<!--            <artifactId>swagger-codegen-maven-plugin</artifactId>-->
+<!--            <version>2.2.3</version>-->
+
+
+<!--            <executions>-->
+
+<!--            <execution>-->
+<!--                <id>generation</id>-->
+<!--                <goals>-->
+<!--                    <goal>generate</goal>-->
+<!--                </goals>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;                                <output>${project.build.directory}/generated-sources/swagger</output>&ndash;&gt;-->
+<!--                    <inputSpec>${project.basedir}/src/main/resources/swagger/api.yml</inputSpec>-->
+<!--                    <language>spring</language>-->
+<!--                    <configOptions>-->
+<!--&lt;!&ndash;                        <apiPackage>com.upgrade.paradise.island.api</apiPackage>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <modelPackage>com.upgrade.paradise.island.api.dto</modelPackage>&ndash;&gt;-->
+<!--                        <sourceFolder>swagger</sourceFolder>-->
+<!--                        <java8>true</java8>-->
+<!--                        <interfaceOnly>true</interfaceOnly>-->
+<!--                        <useTags>true</useTags>-->
+<!--                    </configOptions>-->
+<!--                </configuration>-->
+<!--            </execution>-->
+<!--            </executions>-->
+<!--        </plugin>-->
+
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.2.5.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+    </build>
+</project>

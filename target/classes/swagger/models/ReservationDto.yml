@@ -1,0 +1,13 @@
+title: reservationDto
+type: object
+
+definitions:
+  reservationFieldsDto:
+    title: ReservationFieldsDto
+
+
+allOf:
+  - $ref: '#/definitions/reservationFieldsDto'
+  - properties:
+      id:
+        type: integer
