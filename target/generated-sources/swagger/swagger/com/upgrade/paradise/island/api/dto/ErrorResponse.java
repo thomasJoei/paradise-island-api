@@ -11,14 +11,63 @@ import javax.validation.constraints.*;
 /**
  * ErrorResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2020-02-22T15:57:44.805-05:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2020-02-22T18:11:05.027-05:00")
 
 public class ErrorResponse   {
+  @JsonProperty("timestamp")
+  private String timestamp = null;
+
+  @JsonProperty("error")
+  private String error = null;
+
   @JsonProperty("message")
   private String message = null;
 
-  @JsonProperty("code")
-  private Integer code = null;
+  @JsonProperty("path")
+  private String path = null;
+
+  @JsonProperty("status")
+  private Integer status = null;
+
+  public ErrorResponse timestamp(String timestamp) {
+    this.timestamp = timestamp;
+    return this;
+  }
+
+   /**
+   * Get timestamp
+   * @return timestamp
+  **/
+  @ApiModelProperty(value = "")
+
+
+  public String getTimestamp() {
+    return timestamp;
+  }
+
+  public void setTimestamp(String timestamp) {
+    this.timestamp = timestamp;
+  }
+
+  public ErrorResponse error(String error) {
+    this.error = error;
+    return this;
+  }
+
+   /**
+   * Get error
+   * @return error
+  **/
+  @ApiModelProperty(value = "")
+
+
+  public String getError() {
+    return error;
+  }
+
+  public void setError(String error) {
+    this.error = error;
+  }
 
   public ErrorResponse message(String message) {
     this.message = message;
@@ -40,24 +89,44 @@ public class ErrorResponse   {
     this.message = message;
   }
 
-  public ErrorResponse code(Integer code) {
-    this.code = code;
+  public ErrorResponse path(String path) {
+    this.path = path;
     return this;
   }
 
    /**
-   * Get code
-   * @return code
+   * Get path
+   * @return path
   **/
   @ApiModelProperty(value = "")
 
 
-  public Integer getCode() {
-    return code;
+  public String getPath() {
+    return path;
   }
 
-  public void setCode(Integer code) {
-    this.code = code;
+  public void setPath(String path) {
+    this.path = path;
+  }
+
+  public ErrorResponse status(Integer status) {
+    this.status = status;
+    return this;
+  }
+
+   /**
+   * Get status
+   * @return status
+  **/
+  @ApiModelProperty(value = "")
+
+
+  public Integer getStatus() {
+    return status;
+  }
+
+  public void setStatus(Integer status) {
+    this.status = status;
   }
 
 
@@ -70,13 +139,16 @@ public class ErrorResponse   {
       return false;
     }
     ErrorResponse errorResponse = (ErrorResponse) o;
-    return Objects.equals(this.message, errorResponse.message) &&
-        Objects.equals(this.code, errorResponse.code);
+    return Objects.equals(this.timestamp, errorResponse.timestamp) &&
+        Objects.equals(this.error, errorResponse.error) &&
+        Objects.equals(this.message, errorResponse.message) &&
+        Objects.equals(this.path, errorResponse.path) &&
+        Objects.equals(this.status, errorResponse.status);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(message, code);
+    return Objects.hash(timestamp, error, message, path, status);
   }
 
   @Override
@@ -84,8 +156,11 @@ public class ErrorResponse   {
     StringBuilder sb = new StringBuilder();
     sb.append("class ErrorResponse {\n");
     
+    sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
+    sb.append("    error: ").append(toIndentedString(error)).append("\n");
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
-    sb.append("    code: ").append(toIndentedString(code)).append("\n");
+    sb.append("    path: ").append(toIndentedString(path)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("}");
     return sb.toString();
   }

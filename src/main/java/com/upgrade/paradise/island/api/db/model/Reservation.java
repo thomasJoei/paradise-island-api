@@ -1,7 +1,11 @@
 package com.upgrade.paradise.island.api.db.model;
 
 import javax.persistence.*;
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Entity
 @Table(name = "reservation")
@@ -23,7 +27,7 @@ public class Reservation {
 //        cascade = CascadeType.ALL,
         cascade = {CascadeType.PERSIST, CascadeType.MERGE},
         orphanRemoval = true)
-    private List<ReservedDay> reservedDays;
+    private List<ReservedDay> reservedDays = new ArrayList<>();
 
     public Integer getId() {
         return id;
@@ -54,7 +58,7 @@ public class Reservation {
     }
 
     public void setReservedDays(List<ReservedDay> reservedDays) {
-        this.reservedDays = reservedDays;
+        updateReservedDays(reservedDays);
     }
 
 
@@ -74,7 +78,27 @@ public class Reservation {
     }
 
     public Reservation reservedDays(List<ReservedDay> reservedDays) {
-        this.reservedDays = reservedDays;
+        updateReservedDays(reservedDays);
         return this;
+    }
+
+    private void updateReservedDays(List<ReservedDay> newReservedDays) {
+        List<ReservedDay> oldReservedDays =  new ArrayList<>(this.reservedDays);
+
+        Map<LocalDate, ReservedDay> reservedDaysMap = newReservedDays
+            .stream()
+            .collect(Collectors.toMap(ReservedDay::getDate, d -> d.reservation(this)));
+
+        oldReservedDays.forEach(d -> {
+            if (reservedDaysMap.containsKey(d.getDate())) {
+                reservedDaysMap.remove(d.getDate());
+            } else {
+                this.reservedDays.remove(d);
+            }
+        });
+
+        // add the rest
+        this.reservedDays.addAll(reservedDaysMap.values());
+
     }
 }

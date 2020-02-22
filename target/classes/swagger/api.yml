@@ -31,9 +31,16 @@ definitions:
   errorResponse:
     type: object
     properties:
+      timestamp:
+        type: string
+        format: datetime
+      error:
+        type: string
       message:
         type: string
-      code:
+      path:
+        type: string
+      status:
         type: integer
 
 

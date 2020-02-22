@@ -47,41 +47,27 @@ public class ReservationServiceImpl implements ReservationService {
     @Override
     @Transactional
     public ReservationDto updateReservation(Integer id, ReservationFieldsDto reservationFieldsDto) {
-        validateId(id);
-        Reservation newReservation = reservationFromDto(reservationFieldsDto);
-        newReservation.setId(id);
-
         try {
-            syncReservedDays(newReservation);
-            newReservation = reservationRepository.saveAndFlush(newReservation);
+            validateId(id);
+            Reservation newReservation = reservationFromDto(reservationFieldsDto);
+
+            Reservation reservation = reservationRepository.getOne(newReservation.getId());
+            reservation.fullname(newReservation.getFullname())
+                .email(newReservation.getEmail())
+                .reservedDays(newReservation.getReservedDays());
+
+            reservation = reservationRepository.saveAndFlush(reservation);
+            return reservationDtoFromModel(reservation);
 
         } catch (DataIntegrityViolationException dataIntegrityViolationException) {
             throw new CampsiteNotAvailableException();
         }
-        return reservationDtoFromModel(newReservation);
-
     }
 
     @Override
     public void deleteReservation(Integer id) {
         validateId(id);
         reservationRepository.deleteById(id);
-    }
-
-    private void syncReservedDays(Reservation newReservation) {
-        Reservation oldReservation = reservationRepository.getOne(newReservation.getId());
-
-        Map<LocalDate, ReservedDay> oldReservedDayMap = oldReservation.getReservedDays()
-            .stream()
-            .collect(Collectors.toMap(ReservedDay::getDate, d -> d));
-
-        // if the date was already in the old reservation we keep it
-        List<ReservedDay> newReservedDays = newReservation.getReservedDays()
-            .stream()
-            .map(rd -> oldReservedDayMap.getOrDefault(rd.getDate(), rd))
-            .collect(Collectors.toList());
-
-        newReservation.setReservedDays(newReservedDays);
     }
 
 
