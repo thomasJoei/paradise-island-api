@@ -18,13 +18,10 @@ spring:
       write-dates-as-timestamps: false
 
   datasource:
-
-#    driver-class-name: com.mysql.jdbc.Driver
-#    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
-#    type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/ParadiseIsland?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
-    username: root
-    password:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+    username: a
+    password: sa
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -33,6 +30,7 @@ spring:
         prepStmtCacheSize: 250
         prepStmtCacheSqlLimit: 2048
         useServerPrepStmts: true
+
   jpa:
     show-sql: true
     properties:
@@ -41,6 +39,7 @@ spring:
       hibernate.cache.use_second_level_cache: false
       hibernate.cache.use_query_cache: false
       hibernate.generate_statistics: false
+
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
 #    contexts: dev, faker

@@ -14,7 +14,7 @@ public class ReservedDay {
     @Column(name = "date", columnDefinition = "DATE")
     private LocalDate date;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "reservation_id")
     private Reservation reservation;
 

@@ -17,7 +17,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDate;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
@@ -29,8 +28,19 @@ public class ReservationServiceImpl implements ReservationService {
         this.reservationRepository = reservationRepository;
     }
 
-    @Transactional
+
     @Override
+    public ReservationDto getReservation(Integer id) {
+        return reservationDtoFromModel(
+            reservationRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException("Reservation does not exist.")
+                )
+        );
+    }
+
+
+    @Override
+    @Transactional
     public ReservationDto createReservation(ReservationFieldsDto reservationFieldsDto) {
         Reservation reservation = reservationFromDto(reservationFieldsDto);
 
@@ -51,7 +61,7 @@ public class ReservationServiceImpl implements ReservationService {
             validateId(id);
             Reservation newReservation = reservationFromDto(reservationFieldsDto);
 
-            Reservation reservation = reservationRepository.getOne(newReservation.getId());
+            Reservation reservation = reservationRepository.getOne(id);
             reservation.fullname(newReservation.getFullname())
                 .email(newReservation.getEmail())
                 .reservedDays(newReservation.getReservedDays());

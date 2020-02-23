@@ -3,6 +3,7 @@ package com.upgrade.paradise.island.api.db.model;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -28,6 +29,26 @@ public class Reservation {
         cascade = {CascadeType.PERSIST, CascadeType.MERGE},
         orphanRemoval = true)
     private List<ReservedDay> reservedDays = new ArrayList<>();
+
+
+    public LocalDate getStartDate() {
+        return LocalDate.from(
+            reservedDays.stream()
+                .min(Comparator.comparing(ReservedDay::getDate))
+                .orElseThrow(() -> new RuntimeException("Reservation has no reserved days"))
+                .getDate()
+        );
+    }
+
+    public LocalDate getEndDate() {
+        return LocalDate.from(
+            reservedDays.stream()
+                .max(Comparator.comparing(ReservedDay::getDate))
+                .orElseThrow(() -> new RuntimeException("Reservation has no reserved days"))
+                .getDate()
+                .plusDays(1)
+        );
+    }
 
     public Integer getId() {
         return id;
@@ -83,7 +104,7 @@ public class Reservation {
     }
 
     private void updateReservedDays(List<ReservedDay> newReservedDays) {
-        List<ReservedDay> oldReservedDays =  new ArrayList<>(this.reservedDays);
+        List<ReservedDay> oldReservedDays = new ArrayList<>(this.reservedDays);
 
         Map<LocalDate, ReservedDay> reservedDaysMap = newReservedDays
             .stream()

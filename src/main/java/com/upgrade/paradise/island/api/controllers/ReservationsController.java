@@ -20,8 +20,8 @@ import javax.validation.Valid;
 @Api(tags = {"reservations"})
 public class ReservationsController implements ReservationsApi {
 
-    ReservationService reservationService;
-    ReservationValidator reservationValidator;
+    private ReservationService reservationService;
+    private ReservationValidator reservationValidator;
 
     ReservationsController(@Autowired ReservationService reservationService,
                            @Autowired ReservationValidator reservationValidator) {
@@ -29,6 +29,12 @@ public class ReservationsController implements ReservationsApi {
         this.reservationValidator = reservationValidator;
     }
 
+
+    @Override
+    public ResponseEntity<ReservationDto> getReservation(@PathVariable("reservationId") Integer reservationId) {
+
+        return ResponseEntity.ok(reservationService.getReservation(reservationId));
+    }
 
     @Override
     public ResponseEntity<ReservationDto> createReservation(@Valid @RequestBody ReservationFieldsDto reservationFieldsDto) {

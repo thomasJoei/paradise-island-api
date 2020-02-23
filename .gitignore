@@ -1,0 +1,67 @@
+###################
+# maven           #
+###################
+target
+*pom.xml.versionsBackup
+*.flattened-pom.xml
+###################
+# IDEA IntelliJ   #
+###################
+*.iml
+.idea
+
+###################
+# eclipse files   #
+###################
+.metatada
+.classpath
+.project
+.settings
+
+
+###################
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+######################
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.bak
+*.swp
+*.swo
+*.pyo
+*.pyc
+*~
+*.orig
+
+
+######################
+# Frontend  #
+######################
+
+.svn
+.map
+node_modules
+npm-debug.log
+*.DS_Store
+*.psd
+*.project
+
+######################
+# Backend  #
+######################
+.idea/*
+!.idea/codeStyleSettings.xml
