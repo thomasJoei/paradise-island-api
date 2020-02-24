@@ -46,7 +46,7 @@ Test are using an in-memory H2 database.
 
 
 ## Notes
-
+- Code is feel bit verbose, this is intended since some companies enforce no abbreviations convention.
 - For simplicity API is using UTC timezone.
 - Unit tests have not been pushed too far in this exercise except for controller validation, real project would require more for 
 service layer and Util classes.
