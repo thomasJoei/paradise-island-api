@@ -18,8 +18,6 @@ public class ReservedDay {
     @JoinColumn(name = "reservation_id")
     private Reservation reservation;
 
-    @Version
-    private long version = 0L;
 
     public int getId() {
         return id;
@@ -60,8 +58,4 @@ public class ReservedDay {
         return this;
     }
 
-    public ReservedDay version(long version) {
-        this.version = version;
-        return this;
-    }
 }

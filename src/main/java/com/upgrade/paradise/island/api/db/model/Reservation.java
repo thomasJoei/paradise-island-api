@@ -24,8 +24,6 @@ public class Reservation {
 
 
     @OneToMany(mappedBy = "reservation",
-//        cascade = CascadeType.PERSIST,
-//        cascade = CascadeType.ALL,
         cascade = {CascadeType.PERSIST, CascadeType.MERGE},
         orphanRemoval = true)
     private List<ReservedDay> reservedDays = new ArrayList<>();

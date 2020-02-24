@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 
 public interface DateTimeProvider {
 
-
     LocalDate today();
 
     LocalDate tomorrow();

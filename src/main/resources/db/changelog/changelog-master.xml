@@ -42,9 +42,6 @@
                              references="reservation(id)"
                 />
             </column>
-            <column name="version" type="bigint">
-                <constraints nullable="false"/>
-            </column>
         </createTable>
 
         <createIndex indexName="idx_reserved_day_date"

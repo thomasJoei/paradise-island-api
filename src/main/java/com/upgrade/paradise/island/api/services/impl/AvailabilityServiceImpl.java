@@ -7,7 +7,6 @@ import com.upgrade.paradise.island.api.services.AvailabilityService;
 import com.upgrade.paradise.island.api.util.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

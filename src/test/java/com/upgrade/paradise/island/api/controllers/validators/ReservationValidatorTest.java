@@ -43,7 +43,6 @@ public class ReservationValidatorTest {
         when(dateTimeProvider.now()).thenReturn(now);
         when(dateTimeProvider.tomorrow()).thenReturn(tomorrow);
         when(dateTimeProvider.nextMonth()).thenReturn(nextMonth);
-
     }
 
 

@@ -14,13 +14,10 @@ import java.util.TimeZone;
 public class ParadiseIslandApplication {
 
     public static void main(String[] args) throws Exception {
-        new SpringApplication(ParadiseIslandApplication.class).run(args);
-    }
-
-    @PostConstruct
-    public void init() {
-        // Setting Spring Boot SetTimeZone
+        // Set UTC TimeZone for the whole application + in memory H2 database (for tests)
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+
+        new SpringApplication(ParadiseIslandApplication.class).run(args);
     }
 
 }

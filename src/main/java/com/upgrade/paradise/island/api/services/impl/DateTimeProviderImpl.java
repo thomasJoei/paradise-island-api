@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/**
+ * Main purpose of this class is to be mockable for tests.
+ */
 @Component
 public class DateTimeProviderImpl implements DateTimeProvider {
 

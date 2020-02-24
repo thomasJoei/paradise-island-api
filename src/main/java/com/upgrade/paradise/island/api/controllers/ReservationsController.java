@@ -3,8 +3,8 @@ package com.upgrade.paradise.island.api.controllers;
 
 import com.upgrade.paradise.island.api.ReservationsApi;
 import com.upgrade.paradise.island.api.controllers.validators.ReservationValidator;
-import com.upgrade.paradise.island.api.dto.ReservationDto;
 import com.upgrade.paradise.island.api.dto.NewReservationDto;
+import com.upgrade.paradise.island.api.dto.ReservationDto;
 import com.upgrade.paradise.island.api.services.ReservationService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
