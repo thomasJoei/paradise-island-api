@@ -1,0 +1,14 @@
+<config
+        xmlns='http://www.ehcache.org/v3'
+        xmlns:jsr107='http://www.ehcache.org/v3/jsr107'>
+
+    <cache alias="availabilities">
+        <expiry>
+            <ttl unit="minutes">1</ttl>
+        </expiry>
+        <heap unit="entries">200</heap>
+        <jsr107:mbeans enable-statistics="true"/>
+    </cache>
+
+
+</config>

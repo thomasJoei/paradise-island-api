@@ -63,5 +63,5 @@ npm-debug.log
 ######################
 # Backend  #
 ######################
-.idea/*
+
 !.idea/codeStyleSettings.xml

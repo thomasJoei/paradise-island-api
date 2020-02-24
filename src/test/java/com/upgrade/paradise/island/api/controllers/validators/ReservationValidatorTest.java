@@ -1,6 +1,6 @@
 package com.upgrade.paradise.island.api.controllers.validators;
 
-import com.upgrade.paradise.island.api.dto.ReservationFieldsDto;
+import com.upgrade.paradise.island.api.dto.NewReservationDto;
 import com.upgrade.paradise.island.api.exceptions.ValidationException;
 import com.upgrade.paradise.island.api.services.DateTimeProvider;
 import org.junit.Before;
@@ -51,48 +51,48 @@ public class ReservationValidatorTest {
     public void emailRequired() {
         LocalDate startDate = LocalDate.of(2020, 3, 9);
 
-        ReservationFieldsDto reservationFieldsDto = new ReservationFieldsDto()
+        NewReservationDto newReservationDto = new NewReservationDto()
             .fullname(FULLNAME)
             .email(null)
             .startDate(startDate)
             .endDate(startDate.plusDays(2));
-        reservationValidator.validate(reservationFieldsDto);
+        reservationValidator.validate(newReservationDto);
     }
 
     @Test(expected = ValidationException.class)
     public void fullnameRequired() {
         LocalDate startDate = LocalDate.of(2020, 3, 9);
 
-        ReservationFieldsDto reservationFieldsDto = new ReservationFieldsDto()
+        NewReservationDto newReservationDto = new NewReservationDto()
             .fullname(null)
             .email(EMAIL)
             .startDate(startDate)
             .endDate(startDate.plusDays(2));
-        reservationValidator.validate(reservationFieldsDto);
+        reservationValidator.validate(newReservationDto);
     }
 
     @Test(expected = ValidationException.class)
     public void startDateRequired() {
         LocalDate startDate = LocalDate.of(2020, 3, 9);
 
-        ReservationFieldsDto reservationFieldsDto = new ReservationFieldsDto()
+        NewReservationDto newReservationDto = new NewReservationDto()
             .fullname(FULLNAME)
             .email(EMAIL)
             .startDate(null)
             .endDate(startDate.plusDays(2));
-        reservationValidator.validate(reservationFieldsDto);
+        reservationValidator.validate(newReservationDto);
     }
 
     @Test(expected = ValidationException.class)
     public void endDateRequired() {
         LocalDate startDate = LocalDate.of(2020, 3, 9);
 
-        ReservationFieldsDto reservationFieldsDto = new ReservationFieldsDto()
+        NewReservationDto newReservationDto = new NewReservationDto()
             .fullname(FULLNAME)
             .email(EMAIL)
             .startDate(startDate)
             .endDate(null);
-        reservationValidator.validate(reservationFieldsDto);
+        reservationValidator.validate(newReservationDto);
     }
 
     @Test
@@ -101,12 +101,12 @@ public class ReservationValidatorTest {
 
             LocalDate tomorrow = TODAY.plusDays(1);
 
-            ReservationFieldsDto reservationFieldsDto = new ReservationFieldsDto()
+            NewReservationDto newReservationDto = new NewReservationDto()
                 .fullname(FULLNAME)
                 .email(EMAIL)
                 .startDate(tomorrow)
                 .endDate(tomorrow.plusDays(2));
-            reservationValidator.validate(reservationFieldsDto);
+            reservationValidator.validate(newReservationDto);
             fail("Should have thrown ValidationException but did not!");
         } catch (final ValidationException e) {
             final String message = "The campsite can be reserved minimum 1 day(s) ahead of arrival and up to 1 month in advance.";
@@ -118,7 +118,7 @@ public class ReservationValidatorTest {
     public void startDateMoreThanOneDayInAdvance() {
         LocalDate tomorrow = TODAY.plusDays(1);
 
-        ReservationFieldsDto reservationFieldsDto = new ReservationFieldsDto()
+        NewReservationDto newReservationDto = new NewReservationDto()
             .fullname(FULLNAME)
             .email(EMAIL)
             .startDate(tomorrow)
@@ -127,54 +127,54 @@ public class ReservationValidatorTest {
         LocalDateTime now = TODAY.atTime(11, 59);
         when(dateTimeProvider.now()).thenReturn(now);
 
-        reservationValidator.validate(reservationFieldsDto);
+        reservationValidator.validate(newReservationDto);
     }
 
     @Test(expected = ValidationException.class)
     public void startDateBeforeEndDate() {
         LocalDate startDate = LocalDate.of(2020, 3, 9);
 
-        ReservationFieldsDto reservationFieldsDto = new ReservationFieldsDto()
+        NewReservationDto newReservationDto = new NewReservationDto()
             .fullname(FULLNAME)
             .email(EMAIL)
             .startDate(startDate)
             .endDate(startDate.minusDays(2));
-        reservationValidator.validate(reservationFieldsDto);
+        reservationValidator.validate(newReservationDto);
     }
 
     @Test(expected = ValidationException.class)
     public void reservationExceed3Days() {
         LocalDate startDate = LocalDate.of(2020, 3, 9);
 
-        ReservationFieldsDto reservationFieldsDto = new ReservationFieldsDto()
+        NewReservationDto newReservationDto = new NewReservationDto()
             .fullname(FULLNAME)
             .email(EMAIL)
             .startDate(startDate)
             .endDate(startDate.plusDays(4));
-        reservationValidator.validate(reservationFieldsDto);
+        reservationValidator.validate(newReservationDto);
     }
 
     @Test(expected = ValidationException.class)
     public void reservationNotAfterNextMonth() {
         LocalDate nextMonth = TODAY.plusMonths(1);
 
-        ReservationFieldsDto reservationFieldsDto = new ReservationFieldsDto()
+        NewReservationDto newReservationDto = new NewReservationDto()
             .fullname(FULLNAME)
             .email(EMAIL)
             .startDate(nextMonth)
             .endDate(nextMonth.plusDays(1));
-        reservationValidator.validate(reservationFieldsDto);
+        reservationValidator.validate(newReservationDto);
     }
 
     @Test
     public void reservationNextMonthMinusOneDayIsOK() {
         LocalDate nextMonth = TODAY.plusMonths(1);
 
-        ReservationFieldsDto reservationFieldsDto = new ReservationFieldsDto()
+        NewReservationDto newReservationDto = new NewReservationDto()
             .fullname(FULLNAME)
             .email(EMAIL)
             .startDate(nextMonth.minusDays(1))
             .endDate(nextMonth);
-        reservationValidator.validate(reservationFieldsDto);
+        reservationValidator.validate(newReservationDto);
     }
 }

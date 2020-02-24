@@ -4,7 +4,7 @@ import com.upgrade.paradise.island.api.db.dao.ReservationRepository;
 import com.upgrade.paradise.island.api.db.model.Reservation;
 import com.upgrade.paradise.island.api.db.model.ReservedDay;
 import com.upgrade.paradise.island.api.dto.ReservationDto;
-import com.upgrade.paradise.island.api.dto.ReservationFieldsDto;
+import com.upgrade.paradise.island.api.dto.NewReservationDto;
 import com.upgrade.paradise.island.api.exceptions.CampsiteNotAvailableException;
 import com.upgrade.paradise.island.api.exceptions.NotFoundException;
 import com.upgrade.paradise.island.api.services.ReservationService;
@@ -41,8 +41,8 @@ public class ReservationServiceImpl implements ReservationService {
 
     @Override
     @Transactional
-    public ReservationDto createReservation(ReservationFieldsDto reservationFieldsDto) {
-        Reservation reservation = reservationFromDto(reservationFieldsDto);
+    public ReservationDto createReservation(NewReservationDto newReservationDto) {
+        Reservation reservation = reservationFromDto(newReservationDto);
 
         try {
             reservation = reservationRepository.saveAndFlush(reservation);
@@ -56,10 +56,10 @@ public class ReservationServiceImpl implements ReservationService {
 
     @Override
     @Transactional
-    public ReservationDto updateReservation(Integer id, ReservationFieldsDto reservationFieldsDto) {
+    public ReservationDto updateReservation(Integer id, NewReservationDto newReservationDto) {
         try {
             validateId(id);
-            Reservation newReservation = reservationFromDto(reservationFieldsDto);
+            Reservation newReservation = reservationFromDto(newReservationDto);
 
             Reservation reservation = reservationRepository.getOne(id);
             reservation.fullname(newReservation.getFullname())
@@ -113,17 +113,17 @@ public class ReservationServiceImpl implements ReservationService {
             .plusDays(1);
     }
 
-    private Reservation reservationFromDto(ReservationFieldsDto reservationFieldsDto) {
+    private Reservation reservationFromDto(NewReservationDto newReservationDto) {
         Reservation reservation = new Reservation()
-            .fullname(reservationFieldsDto.getFullname())
-            .email(reservationFieldsDto.getEmail());
-        reservation.setReservedDays(createReservedDays(reservationFieldsDto, reservation));
+            .fullname(newReservationDto.getFullname())
+            .email(newReservationDto.getEmail());
+        reservation.setReservedDays(createReservedDays(newReservationDto, reservation));
         return reservation;
     }
 
 
-    private List<ReservedDay> createReservedDays(ReservationFieldsDto reservationFieldsDto, Reservation reservation) {
-        return DateUtils.getDatesStream(reservationFieldsDto.getStartDate(), reservationFieldsDto.getEndDate())
+    private List<ReservedDay> createReservedDays(NewReservationDto newReservationDto, Reservation reservation) {
+        return DateUtils.getDatesStream(newReservationDto.getStartDate(), newReservationDto.getEndDate())
             .map(date -> new ReservedDay()
                 .date(date)
                 .reservation(reservation)

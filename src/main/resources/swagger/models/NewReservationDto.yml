@@ -1,4 +1,4 @@
-title: ReservationFields
+title: NewReservationDto
 type: object
 properties:
   startDate:

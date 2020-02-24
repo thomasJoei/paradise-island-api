@@ -22,8 +22,8 @@ produces:
   - application/json
 
 definitions:
-  reservationFieldsDto:
-    $ref: ./models/ReservationFieldsDto.yml
+  newReservationDto:
+    $ref: ./models/NewReservationDto.yml
 
   reservationDto:
     $ref: ./models/ReservationDto.yml
@@ -45,12 +45,12 @@ definitions:
 
 
 parameters:
-  reservationFieldsDto:
-    name: ReservationFieldsDto
+  newReservationDto:
+    name: NewReservationDto
     in: body
     required: true
     schema:
-      $ref: '#/definitions/reservationFieldsDto'
+      $ref: '#/definitions/newReservationDto'
 
 
 responses:
@@ -118,7 +118,7 @@ paths:
       tags:
         - reservations
       parameters:
-        - $ref: '#/parameters/reservationFieldsDto'
+        - $ref: '#/parameters/newReservationDto'
 
       summary: create a reservation
       description: create a reservation
@@ -160,7 +160,7 @@ paths:
           type: integer
           in: path
           required: true
-        - $ref: '#/parameters/reservationFieldsDto'
+        - $ref: '#/parameters/newReservationDto'
 
       summary: update a reservation
       description: update a reservation

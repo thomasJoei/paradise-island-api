@@ -6,6 +6,7 @@ import com.upgrade.paradise.island.api.dto.Availability;
 import com.upgrade.paradise.island.api.services.AvailabilityService;
 import com.upgrade.paradise.island.api.util.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -24,8 +25,9 @@ public class AvailabilityServiceImpl implements AvailabilityService {
     }
 
     @Override
+    @Cacheable("availabilities")
     public List<Availability> getAvailabilities(LocalDate startDate, LocalDate endDate) {
-        List<ReservedDay> reservedDays = reservedDayRepository.getReservedDayByDateBetween(startDate, endDate);
+        List<ReservedDay> reservedDays = reservedDayRepository.getReservedDaysByDateBetween(startDate, endDate);
 
         Map<LocalDate, ReservedDay> reservedDaysMap = reservedDays.stream()
             .collect(Collectors.toMap(ReservedDay::getDate, d -> d));

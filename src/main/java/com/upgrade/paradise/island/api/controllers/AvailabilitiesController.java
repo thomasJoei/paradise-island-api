@@ -35,7 +35,7 @@ public class AvailabilitiesController implements AvailabilitiesApi {
         @RequestParam(value = "startDate", required = false) @org.springframework.format.annotation.DateTimeFormat(iso = org.springframework.format.annotation.DateTimeFormat.ISO.DATE) LocalDate startDate,
         @RequestParam(value = "endDate", required = false) @org.springframework.format.annotation.DateTimeFormat(iso = org.springframework.format.annotation.DateTimeFormat.ISO.DATE) LocalDate endDate) {
         startDate = startDate != null ? startDate : dateTimeProvider.tomorrow();
-        endDate = endDate != null ? endDate : dateTimeProvider.nextMonth().plusDays(1);
+        endDate = endDate != null ? endDate : startDate.plusMonths(1);
 
         if (startDate.isAfter(endDate)) {
             throw new ValidationException("Start date must be before end date.");

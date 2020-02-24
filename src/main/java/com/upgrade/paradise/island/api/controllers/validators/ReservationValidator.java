@@ -1,7 +1,7 @@
 package com.upgrade.paradise.island.api.controllers.validators;
 
 import com.upgrade.paradise.island.api.dto.ReservationDto;
-import com.upgrade.paradise.island.api.dto.ReservationFieldsDto;
+import com.upgrade.paradise.island.api.dto.NewReservationDto;
 import com.upgrade.paradise.island.api.exceptions.ValidationException;
 import com.upgrade.paradise.island.api.services.DateTimeProvider;
 import org.apache.commons.lang3.StringUtils;
@@ -19,28 +19,28 @@ public class ReservationValidator {
         this.dateTimeProvider = dateTimeProvider;
     }
 
-    public void validate(ReservationFieldsDto reservationFieldsDto) {
+    public void validate(NewReservationDto newReservationDto) {
 
-        if (StringUtils.isBlank(reservationFieldsDto.getEmail())) {
+        if (StringUtils.isBlank(newReservationDto.getEmail())) {
             throw new ValidationException("Email required.");
         }
-        if (StringUtils.isBlank(reservationFieldsDto.getFullname())) {
+        if (StringUtils.isBlank(newReservationDto.getFullname())) {
             throw new ValidationException("Fullname required.");
         }
-        if (reservationFieldsDto.getStartDate() == null) {
+        if (newReservationDto.getStartDate() == null) {
             throw new ValidationException("Start date required.");
         }
-        if (reservationFieldsDto.getEndDate() == null) {
+        if (newReservationDto.getEndDate() == null) {
             throw new ValidationException("End date required.");
         }
-        if (reservationFieldsDto.getEndDate().isBefore(reservationFieldsDto.getStartDate())) {
+        if (newReservationDto.getEndDate().isBefore(newReservationDto.getStartDate())) {
             throw new ValidationException("Start date must be before end date.");
         }
-        if (DAYS.between(reservationFieldsDto.getStartDate(),reservationFieldsDto.getEndDate()) > 3) {
+        if (DAYS.between(newReservationDto.getStartDate(),newReservationDto.getEndDate()) > 3) {
             throw new ValidationException("Reservation exceed 3 days.");
         }
-        if (dateTimeProvider.now().isAfter(reservationFieldsDto.getStartDate().atTime(12, 0).minusDays(1))
-        || reservationFieldsDto.getEndDate().isAfter(dateTimeProvider.nextMonth())) {
+        if (dateTimeProvider.now().isAfter(newReservationDto.getStartDate().atTime(12, 0).minusDays(1))
+        || newReservationDto.getEndDate().isAfter(dateTimeProvider.nextMonth())) {
             throw new ValidationException("The campsite can be reserved minimum 1 day(s) ahead of arrival and up to 1 month in advance.");
         }
     }

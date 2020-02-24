@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bce28e70-38e7-4b50-82aa-2494870aebfc" name="Default Changelist" comment="" />
+    <list default="true" id="bce28e70-38e7-4b50-82aa-2494870aebfc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/Swagger2SpringBoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/ReservationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/ReservationsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/dao/ReservedDayRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/dao/ReservedDayRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/ReservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/AvailabilityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/AvailabilityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/configuration/LiquibaseConfiguration.java.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/configuration/SwaggerDocumentationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/configuration/SwaggerDocumentationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/swagger/api.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/swagger/api.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/swagger/models/ReservationDto.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/swagger/models/ReservationDto.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/swagger/models/ReservationFieldsDto.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplTest.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,6 +48,28 @@
       <set />
     </option>
     <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="paradiseIslandDb" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="paradiseIslandDb" type="feb32156:DbDataSourceImpl" />
+        <item name="PARADISEISLANDDB: database" type="2aa06773:H2ImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="paradiseIslandDb" type="feb32156:DbDataSourceImpl" />
+        <item name="PARADISEISLANDDB: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="paradiseIslandDb" type="feb32156:DbDataSourceImpl" />
+        <item name="PARADISEISLANDDB: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
+        <item name="RESERVATION: table" type="818c1b4a:H2ImplModel$Table" />
+      </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="upgrade-island-api-db" type="feb32156:DbDataSourceImpl" />
@@ -70,43 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1242#1243#0" expanded="true" />
-                <element signature="e#1308#1309#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/ReservationsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-197">
-              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/ReservationService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/model/ReservedDay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+            <state relative-caret-position="134">
+              <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,58 +125,89 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="148" selection-start-line="148" selection-end-line="148" />
+            <state relative-caret-position="825">
+              <caret line="140" column="30" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/configuration/SwaggerDocumentationConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/dao/ReservedDayRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/dao/ReservationRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="34" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://3d1c643c-236d-458e-8b87-6570985cd1c6/schema/paradiseisland/table/reserved_day">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="6f0259b2-49d6-42ae-823a-3ae5ad734f73">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="46" column="5" selection-start-line="31" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
+            <state relative-caret-position="182">
+              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/AvailabilityServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/swagger/models/NewReservationDto.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/swagger/models/ReservationDto.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/swagger/api.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -189,7 +228,6 @@
       <find>reservationDto</find>
       <find>reservationFields</find>
       <find>start</find>
-      <find>ReservationFields</find>
       <find>getStartdate</find>
       <find>StringU</find>
       <find>getDatesStream</find>
@@ -198,12 +236,27 @@
       <find>Map</find>
       <find>reservationDtoFromModel</find>
       <find>&quot;#/responses/Validation&quot;</find>
+      <find>iml</find>
+      <find>springfox</find>
+      <find>test</find>
+      <find>petst</find>
+      <find>buck</find>
+      <find>cache</find>
+      <find>jdb</find>
+      <find>availabilities</find>
+      <find>avai</find>
+      <find>ReservationFields</find>
+      <find>fiel</find>
     </findStrings>
     <replaceStrings>
       <replace>getStartDate</replace>
       <replace>reservationFieldsDto</replace>
       <replace>&quot;#/responses/ValidationError&quot;</replace>
+      <replace>NewReservation</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -213,32 +266,39 @@
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/exceptions/ValidationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/DateTimeProvider.java" />
         <option value="$PROJECT_DIR$/src/main/resources/swagger/models/reservationFieldsDto" />
-        <option value="$PROJECT_DIR$/src/main/resources/swagger/models/ReservationDto.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/swagger/models/ReservationFieldsDto.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/exceptions/CampsiteNotAvailableException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/RestExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/exceptions/NotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/util/DateUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/AvailabilityServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/DateTimeProviderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidatorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/dao/ReservationRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/swagger/api.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/model/ReservedDay.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/model/Reservation.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/ReservationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/ReservationsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplIntegrationTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/configuration/SwaggerDocumentationConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/ReservationsControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/Swagger2SpringBoot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/ParadiseIslandApplication.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/configuration/CacheConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/swagger/models/ReservationFieldsDto.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/swagger/models/ReservationDto.yml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/AvailabilityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/dao/ReservedDayRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesController.java" />
       </list>
     </option>
   </component>
@@ -321,6 +381,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="island" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="validators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="paradise-island-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="paradise-island-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="island" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -332,7 +403,28 @@
               <item name="island" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="paradise-island-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="paradise-island-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="island" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="paradise-island-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="paradise-island-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="island" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="paradise-island-api" type="b2602c69:ProjectViewProjectNode" />
@@ -354,6 +446,25 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="paradise-island-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="paradise-island-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="island" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="paradise-island-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="paradise-island-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="island" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="paradise-island-api" type="b2602c69:ProjectViewProjectNode" />
@@ -415,6 +526,16 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="paradise-island-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="paradise-island-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="validators" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -441,17 +562,19 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -462,19 +585,20 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.upgrade.paradise.island.api.controllers" />
       <recent name="com.upgrade.paradise.island.api.services.impl" />
       <recent name="com.upgrade.paradise.island.api.controllers.validators" />
-      <recent name="com.upgrade.paradise.island.api.controllers" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/swagger/models" />
@@ -492,7 +616,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation">
+  <component name="RunManager" selected="Spring Boot.ParadiseIslandApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -501,6 +625,22 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationServiceImplIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="paradise-island-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upgrade.paradise.island.api.services.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.upgrade.paradise.island.api.services.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrade.paradise.island.api.services.impl.ReservationServiceImplIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -556,33 +696,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReservationValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReservationsControllerTest.getReservation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="paradise-island-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.upgrade.paradise.island.api.controllers.validators.*" />
+          <option name="PATTERN" value="com.upgrade.paradise.island.api.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.upgrade.paradise.island.api.controllers.validators" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrade.paradise.island.api.controllers.validators.ReservationValidatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReservationValidatorTest.reservationExceed3Days" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="paradise-island-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.upgrade.paradise.island.api.controllers.validators.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.upgrade.paradise.island.api.controllers.validators" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrade.paradise.island.api.controllers.validators.ReservationValidatorTest" />
-      <option name="METHOD_NAME" value="reservationExceed3Days" />
+      <option name="PACKAGE_NAME" value="com.upgrade.paradise.island.api.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrade.paradise.island.api.controllers.ReservationsControllerTest" />
+      <option name="METHOD_NAME" value="getReservation" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -596,9 +720,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Swagger2SpringBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="ParadiseIslandApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="paradise-island-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.upgrade.paradise.island.Swagger2SpringBoot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.upgrade.paradise.island.ParadiseIslandApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -621,13 +746,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ReservationsControllerTest.getReservation" />
+      <item itemvalue="JUnit.ReservationServiceImplIntegrationTest.createOverlappingReservations" />
+      <item itemvalue="JUnit.ReservationServiceImplIntegrationTest.createReservation" />
+      <item itemvalue="JUnit.ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation" />
+      <item itemvalue="Spring Boot.ParadiseIslandApplication" />
+      <item itemvalue="JUnit.ReservationServiceImplIntegrationTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReservationServiceImplIntegrationTest" />
+        <item itemvalue="JUnit.ReservationsControllerTest.getReservation" />
         <item itemvalue="JUnit.ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation" />
         <item itemvalue="JUnit.ReservationServiceImplIntegrationTest.createOverlappingReservations" />
         <item itemvalue="JUnit.ReservationServiceImplIntegrationTest.createReservation" />
-        <item itemvalue="JUnit.ReservationValidatorTest" />
-        <item itemvalue="JUnit.ReservationValidatorTest.reservationExceed3Days" />
       </list>
     </recent_temporary>
   </component>
@@ -647,45 +780,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReservationServiceImplIntegrationTest_updateReservationFailRollbackToOldReservation - 2020.02.22 at 19h 09m 25s.xml">
-      <configuration name="ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation" configurationId="JUnit" />
+    <history-entry file="ReservationsControllerTest_getReservation - 2020.02.23 at 18h 31m 52s.xml">
+      <configuration name="ReservationsControllerTest.getReservation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReservationServiceImplIntegrationTest_updateReservationFailRollbackToOldReservation - 2020.02.22 at 19h 10m 26s.xml">
-      <configuration name="ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation" configurationId="JUnit" />
+    <history-entry file="ReservationsControllerTest_getReservation - 2020.02.23 at 18h 32m 06s.xml">
+      <configuration name="ReservationsControllerTest.getReservation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReservationServiceImplIntegrationTest_createOverlappingReservations - 2020.02.22 at 19h 12m 58s.xml">
-      <configuration name="ReservationServiceImplIntegrationTest.createOverlappingReservations" configurationId="JUnit" />
+    <history-entry file="ReservationsControllerTest_getReservation - 2020.02.23 at 18h 33m 12s.xml">
+      <configuration name="ReservationsControllerTest.getReservation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReservationServiceImplIntegrationTest_createOverlappingReservations - 2020.02.22 at 19h 13m 58s.xml">
-      <configuration name="ReservationServiceImplIntegrationTest.createOverlappingReservations" configurationId="JUnit" />
+    <history-entry file="ReservationsControllerTest_getReservation - 2020.02.23 at 18h 33m 47s.xml">
+      <configuration name="ReservationsControllerTest.getReservation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReservationServiceImplIntegrationTest_updateReservationFailRollbackToOldReservation - 2020.02.22 at 19h 15m 14s.xml">
-      <configuration name="ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation" configurationId="JUnit" />
+    <history-entry file="ReservationsControllerTest_getReservation - 2020.02.23 at 18h 35m 11s.xml">
+      <configuration name="ReservationsControllerTest.getReservation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReservationServiceImplIntegrationTest_updateReservationFailRollbackToOldReservation - 2020.02.22 at 19h 23m 30s.xml">
-      <configuration name="ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation" configurationId="JUnit" />
+    <history-entry file="ReservationsControllerTest_getReservation - 2020.02.23 at 18h 35m 37s.xml">
+      <configuration name="ReservationsControllerTest.getReservation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReservationServiceImplIntegrationTest_updateReservationFailRollbackToOldReservation - 2020.02.22 at 19h 27m 07s.xml">
-      <configuration name="ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation" configurationId="JUnit" />
+    <history-entry file="ReservationsControllerTest_getReservation - 2020.02.23 at 18h 35m 55s.xml">
+      <configuration name="ReservationsControllerTest.getReservation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReservationServiceImplIntegrationTest_updateReservationFailRollbackToOldReservation - 2020.02.22 at 19h 38m 45s.xml">
-      <configuration name="ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation" configurationId="JUnit" />
+    <history-entry file="ReservationsControllerTest_getReservation - 2020.02.23 at 18h 37m 43s.xml">
+      <configuration name="ReservationsControllerTest.getReservation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReservationServiceImplIntegrationTest_updateReservationFailRollbackToOldReservation - 2020.02.22 at 19h 43m 26s.xml">
-      <configuration name="ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation" configurationId="JUnit" />
+    <history-entry file="ReservationsControllerTest_getReservation - 2020.02.23 at 18h 37m 56s.xml">
+      <configuration name="ReservationsControllerTest.getReservation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReservationServiceImplIntegrationTest_updateReservationFailRollbackToOldReservation - 2020.02.22 at 19h 45m 52s.xml">
-      <configuration name="ReservationServiceImplIntegrationTest.updateReservationFailRollbackToOldReservation" configurationId="JUnit" />
+    <history-entry file="ReservationServiceImplIntegrationTest - 2020.02.23 at 19h 32m 00s.xml">
+      <configuration name="ReservationServiceImplIntegrationTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27176000" />
+    <option name="totallyTimeSpent" value="42772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21888413" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3111588" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -695,8 +828,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37228915" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.036144577" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37831324" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40240964" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -759,143 +892,58 @@
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidator.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/ReservationsController.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/ReservationsControllerTest.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/ReservationsController.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImpl.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImpl.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/AvailabilityServiceImpl.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesController.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/Id.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/lang/RuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/swagger/swagger/com/upgrade/paradise/island/api/dto/ReservationFields.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/swagger/models/ReservationDto.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/swagger/swagger/com/upgrade/paradise/island/api/dto/ReservationDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="86" lean-forward="true" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/swagger/swagger/com/upgrade/paradise/island/api/ReservationsApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/swagger/models/ReservationFieldsDto.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/swagger/swagger/com/upgrade/paradise/island/api/dto/ReservationFieldsDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1744#1745#0" expanded="true" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1815#1816#0" expanded="true" />
-            <element signature="e#1849#1850#0" expanded="true" />
-            <element signature="e#2058#2059#0" expanded="true" />
-            <element signature="e#2080#2081#0" expanded="true" />
-            <element signature="e#2120#2121#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
-            <element signature="e#2731#2732#0" expanded="true" />
-            <element signature="e#2797#2798#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/exceptions/CampsiteNotAvailableException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/exceptions/ValidationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/exceptions/NotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/swagger/swagger/com/upgrade/paradise/island/api/AvailabilitiesApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar!/org/apache/commons/lang3/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/AvailabilityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/DateTimeProviderImpl.java">
@@ -916,16 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -951,20 +989,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/RestExceptionHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/dao/ReservationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="84" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/swagger/api.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db/changelog/changelog-master.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-28">
@@ -976,36 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="260" column="12" selection-start-line="260" selection-start-column="12" selection-end-line="260" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/dao/ReservedDayRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#47#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/AvailabilityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,44 +1020,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/Swagger2SpringBoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/time/LocalDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="1983" column="19" selection-start-line="1983" selection-start-column="19" selection-end-line="1983" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/model/Reservation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1084,16 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="46" column="5" selection-start-line="31" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/model/ReservedDay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1101,22 +1051,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3d1c643c-236d-458e-8b87-6570985cd1c6/schema/paradiseisland/table/reserved_day">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="6f0259b2-49d6-42ae-823a-3ae5ad734f73">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/ReservationsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1130,13 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="34" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.10.RELEASE/spring-data-jpa-2.1.10.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -1144,42 +1071,300 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/swagger/swagger/com/upgrade/paradise/island/api/dto/ReservationDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/swagger/swagger/com/upgrade/paradise/island/api/dto/ReservationFieldsDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/model/Reservation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="28" column="67" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.jar!/org/springframework/test/web/servlet/result/MockMvcResultMatchers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+          <folding>
+            <element signature="e#3087#3088#0" expanded="true" />
+            <element signature="e#3136#3137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/configuration/DateTimeFormatConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/configuration/JacksonConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/controllers/ReservationsControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-377">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="466">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4426b403-161a-4af2-9869-43bf0561aff2/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/ReservationsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/validators/ReservationValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4426b403-161a-4af2-9869-43bf0561aff2/database/PARADISEISLANDDB/schema/PUBLIC/table/RESERVED_DAY">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="6f0259b2-49d6-42ae-823a-3ae5ad734f73">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3d1c643c-236d-458e-8b87-6570985cd1c6/schema/paradiseisland/table/reserved_day">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="6f0259b2-49d6-42ae-823a-3ae5ad734f73">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/ParadiseIslandApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/configuration/CacheConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/cache/annotation/Cacheable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/swagger/models/NewReservationDto.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/swagger/models/ReservationDto.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/swagger/api.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="134">
+          <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/upgrade/paradise/island/api/services/impl/ReservationServiceImplIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="825">
+          <caret line="140" column="30" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/configuration/SwaggerDocumentationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        <state relative-caret-position="260">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/services/impl/AvailabilityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/dao/ReservedDayRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/db/dao/ReservationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upgrade/paradise/island/api/controllers/AvailabilitiesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -1203,6 +1388,17 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -1217,6 +1413,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

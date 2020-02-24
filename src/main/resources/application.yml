@@ -2,6 +2,7 @@
 logging:
   level:
     liquibase: INFO
+    org.springframework.web: INFO
 
 spring:
   application:
@@ -10,15 +11,28 @@ spring:
     active: dev
     include:
       - swagger
-      # Uncomment to activate TLS for the dev profile
-      #- tls
+
   jackson:
     serialization:
       indent-output: true
       write-dates-as-timestamps: false
 
-  datasource:
+#  datasource:
+#    driver-class-name: org.h2.Driver
+#    #    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+#    url: jdbc:h2:~/paradiseIslandDb;AUTO_SERVER=TRUE
+#    username: upgrade
+#    password: password
+#    hikari:
+#      poolName: Hikari
+#      auto-commit: false
+#      data-source-properties:
+#        cachePrepStmts: true
+#        prepStmtCacheSize: 250
+#        prepStmtCacheSqlLimit: 2048
+#        useServerPrepStmts: true
 
+  datasource:
 #    driver-class-name: com.mysql.jdbc.Driver
 #    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
 #    type: com.zaxxer.hikari.HikariDataSource
@@ -47,8 +61,11 @@ spring:
 #    contexts: dev
 #    change-log: classpath:liquibase/master.xml
     change-log: classpath:db/changelog/changelog-master.xml
-
     enabled: true
+
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
 
 server:
   port: 8080

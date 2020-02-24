@@ -17,25 +17,25 @@ public class SwaggerDocumentationConfig {
 
     ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-            .title("Petstore")
-            .description("A simple Petstore API")
+            .title("Paradise Island")
+            .description("Paradise Island API")
             .license("")
             .licenseUrl("http://unlicense.org")
             .termsOfServiceUrl("")
-            .version("0.3.1")
-            .contact(new Contact("","", ""))
+            .version("1.0.0")
+            .contact(new Contact("", "", ""))
             .build();
     }
 
     @Bean
-    public Docket customImplementation(){
+    public Docket customImplementation() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                    .apis(RequestHandlerSelectors.basePackage("com.upgrade.paradise.island.api"))
-                    .build()
-                .directModelSubstitute(org.joda.time.LocalDate.class, java.sql.Date.class)
-                .directModelSubstitute(org.joda.time.DateTime.class, java.util.Date.class)
-                .apiInfo(apiInfo());
+            .select()
+            .apis(RequestHandlerSelectors.basePackage("com.upgrade.paradise.island.api"))
+            .build()
+            .directModelSubstitute(org.joda.time.LocalDate.class, java.sql.Date.class)
+            .directModelSubstitute(org.joda.time.DateTime.class, java.util.Date.class)
+            .apiInfo(apiInfo());
     }
 
 }

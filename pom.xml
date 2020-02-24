@@ -36,6 +36,9 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jersey</artifactId>
         </dependency>
+
+
+
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
@@ -58,7 +61,7 @@
             <version>2.9.4</version>
         </dependency>
 
-<!--        Persistence-->
+        <!--        Persistence-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -98,6 +101,20 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- Cache -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -132,35 +149,35 @@
                 </executions>
             </plugin>
 
-<!--            <plugin>-->
-<!--            <groupId>io.swagger</groupId>-->
-<!--            <artifactId>swagger-codegen-maven-plugin</artifactId>-->
-<!--            <version>2.2.3</version>-->
+            <!--            <plugin>-->
+            <!--            <groupId>io.swagger</groupId>-->
+            <!--            <artifactId>swagger-codegen-maven-plugin</artifactId>-->
+            <!--            <version>2.2.3</version>-->
 
 
-<!--            <executions>-->
+            <!--            <executions>-->
 
-<!--            <execution>-->
-<!--                <id>generation</id>-->
-<!--                <goals>-->
-<!--                    <goal>generate</goal>-->
-<!--                </goals>-->
-<!--                <configuration>-->
-<!--                    &lt;!&ndash;                                <output>${project.build.directory}/generated-sources/swagger</output>&ndash;&gt;-->
-<!--                    <inputSpec>${project.basedir}/src/main/resources/swagger/api.yml</inputSpec>-->
-<!--                    <language>spring</language>-->
-<!--                    <configOptions>-->
-<!--&lt;!&ndash;                        <apiPackage>com.upgrade.paradise.island.api</apiPackage>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <modelPackage>com.upgrade.paradise.island.api.dto</modelPackage>&ndash;&gt;-->
-<!--                        <sourceFolder>swagger</sourceFolder>-->
-<!--                        <java8>true</java8>-->
-<!--                        <interfaceOnly>true</interfaceOnly>-->
-<!--                        <useTags>true</useTags>-->
-<!--                    </configOptions>-->
-<!--                </configuration>-->
-<!--            </execution>-->
-<!--            </executions>-->
-<!--        </plugin>-->
+            <!--            <execution>-->
+            <!--                <id>generation</id>-->
+            <!--                <goals>-->
+            <!--                    <goal>generate</goal>-->
+            <!--                </goals>-->
+            <!--                <configuration>-->
+            <!--                    &lt;!&ndash;                                <output>${project.build.directory}/generated-sources/swagger</output>&ndash;&gt;-->
+            <!--                    <inputSpec>${project.basedir}/src/main/resources/swagger/api.yml</inputSpec>-->
+            <!--                    <language>spring</language>-->
+            <!--                    <configOptions>-->
+            <!--&lt;!&ndash;                        <apiPackage>com.upgrade.paradise.island.api</apiPackage>&ndash;&gt;-->
+            <!--&lt;!&ndash;                        <modelPackage>com.upgrade.paradise.island.api.dto</modelPackage>&ndash;&gt;-->
+            <!--                        <sourceFolder>swagger</sourceFolder>-->
+            <!--                        <java8>true</java8>-->
+            <!--                        <interfaceOnly>true</interfaceOnly>-->
+            <!--                        <useTags>true</useTags>-->
+            <!--                    </configOptions>-->
+            <!--                </configuration>-->
+            <!--            </execution>-->
+            <!--            </executions>-->
+            <!--        </plugin>-->
 
 
             <plugin>
